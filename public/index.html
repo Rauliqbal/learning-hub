@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Forum Belajar Desain dan Coding Bersama Mentor yang jagoo." />
+        <link href="/public/style.css" rel="stylesheet" />
+        <!-- IonIcons  -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <title>Learning Hub</title>
+    </head>
+    <body>
+        <header class="fixed left-0 right-0">
+            <div class="flex items-center justify-center flex-nowrap py-2 bg-gradient-to-r from-purple-500 to-indigo-400 px-2">
+                <p class="bg-white text-purple-500 rounded text-xs px-[4px] font-bold mr-2">NEW</p>
+                <h4 class="text-white text-[12px] font-poppins md:hidden">LearningHub had just been launched! <a href="#" class="hover:underline">Check out</a></h4>
+                <!-- Desktop -->
+                <h4 class="text-white text-sm font-poppins hidden md:block">LearningHub had just been launched! Check out the <a href="#" class="hover:underline">Welcome post.</a></h4>
+            </div>
+
+            <nav class="md:flex md:items-center md:justify-between px-[4%] md:px-[7%] py-6 left-0 right-0 bg-white fixed shadow-md">
+                <div class="flex justify-between">
+                    <a href="#" class="flex items-center font-bold text-xl md:text-2xl">
+                        <span class="text-3xl text-indigo-500 pt-2 mr-1">
+                            <ion-icon name="logo-xing"></ion-icon>
+                        </span>
+                        LearningHub
+                    </a>
+
+                    <span class="text-3xl md:hidden cursor-pointer">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                    </span>
+                </div>
+
+                <ul class="md:flex md:items-center md:static absolute w-full md:w-auto bg-white py-8 md:py-0 pl-7 md:pl-0 left-[50rem] transition-all duration-500 ease-in-out shadow-lg md:shadow-transparent">
+                    <li class="my-4 mx-4 md:my-0">
+                        <a href="" class="md:my-0 hover:underline duration-500">Code</a>
+                    </li>
+
+                    <li class="my-4 mx-4 md:my-0">
+                        <a href="" class="md:my-0 hover:underline duration-500">Design</a>
+                    </li>
+
+                    <li class="my-4 mx-4 md:my-0">
+                        <a href="" class="md:my-0 hover:underline duration-500">Community</a>
+                    </li>
+                    <li class="my-4 mx-4">
+                        <a href="" class="bg-gray-100 text-slate-800 py-2 px-6 rounded-md hover:bg-gray-300 focus:shadow-md focus:translate-y-[-4px] md:hidden transition-all duration-300">Sign In</a>
+                    </li>
+                </ul>
+                <a href="" class="bg-gray-100 text-slate-800 py-2 px-6 rounded-md hover:bg-gray-300 focus:shadow-md focus:translate-y-[-4px] hidden md:block transition-all duration-300">Sign In</a>
+            </nav>
+        </header>
+
+        <section class="px-[7%] pt-36">
+            <div class="flex flex-col-reverse md:flex-row shadow-lg items-center rounded-xl px-3 md:px-8 py-8 gap-0 md:ga40">
+                <div class="px-0 md:px-12 w-full md:w-1/2">
+                    <h1 class="text-4xl md:text-5xl font-bold">Figma Course</h1>
+                    <p class="text-gray-500 my-4">Figma is a vector graphics editor and prototyping tool which is primarily web-based.</p>
+
+                    <a href="#" class="bg-gray-100 text-slate-800 font-bold py-2 px-6 hover:bg-gray-200 rounded-md transition-all duration-300 group">
+                        Read
+                        <span class="text-xs group-hover:ml-1 transition-all duration-300"><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                    </a>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img class="mx-auto w-1/2 md:w-auto" src="/src/images/figma.svg" alt="Course figma gratis" />
+                </div>
+            </div>
+        </section>
+
+        <section class="px-[7%] mt-20">
+            <div class="flex items-center justify-between">
+                <h3 class="text-xl font-bold">Top</h3>
+                <a href="#" class="text-blue-500 hover:underline">See all</a>
+            </div>
+
+            <!-- Card Class -->
+            <div class="flex flex-col md:flex-row gap-20 mt-8">
+                <div class="md:w-1/2">
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <div class="bg-gradient-to-r from-purple-500 to-indigo-500 h-48 flex justify-center">
+                            <img class="mx-auto py-8 w-24" src="/src/images/nextjs.svg" alt="" />
+                        </div>
+                        <div>
+                            <div class="p-10">
+                                <h2 class="font-bold text-2xl">Next.js Introduction</h2>
+                                <p class="text-gray-500 mt-4 mb-8">Next.js is an open-source development framework built on top of Node.js.</p>
+                                <a href="" class="bg-blue-400 text-white hover:bg-blue-600 font-bold py-2 px-6 rounded-lg transition-all duration-300">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <div class="bg-gradient-to-r from-purple-500 to-orange-500 h-48 flex justify-center">
+                            <img class="mx-auto py-8 w-24" src="/src/images/remix.svg" alt="" />
+                        </div>
+                        <div>
+                            <div class="p-10">
+                                <h2 class="font-bold text-2xl">Remix Introduction</h2>
+                                <p class="text-gray-500 mt-4 mb-8">Remix is a new framework that blurs the line between server and client.</p>
+                                <a href="" class="bg-blue-400 text-white hover:bg-blue-600 font-bold py-2 px-6 rounded-lg transition-all duration-300">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-[7%] mt-20">
+            <div class="flex items-center justify-between">
+                <h3 class="text-xl font-bold">Recent</h3>
+                <a href="#" class="text-blue-500 hover:underline">See all</a>
+            </div>
+
+            <!-- Card Class -->
+            <div class="flex flex-col md:flex-row gap-20 mt-8">
+                <!-- TypeScript Card -->
+                <div class="md:1/2 lg:w-2/6">
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <div class="bg-gradient-to-r from-purple-500 to-blue-500 h-48 flex justify-center">
+                            <img class="mx-auto py-8 w-24" src="/src/images/typescript.svg" alt="" />
+                        </div>
+                        <div>
+                            <div class="p-10">
+                                <h2 class="font-bold text-2xl">TypeScript 101</h2>
+                                <p class="text-gray-500 mt-4 mb-8">NTypeScript is a programming language developed and maintained by Microsoft.</p>
+                                <a href="" class="bg-blue-400 text-white hover:bg-blue-600 font-bold py-2 px-6 rounded-lg transition-all duration-300">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phoenix Card -->
+                <div class="md:1/2 lg:w-2/6">
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <div class="bg-gradient-to-r from-purple-400 to-orange-600 h-48 flex justify-center">
+                            <img class="mx-auto py-8 w-24" src="/src/images/phoenix.svg" alt="" />
+                        </div>
+                        <div>
+                            <div class="p-10">
+                                <h2 class="font-bold text-2xl">Learn Phoenix</h2>
+                                <p class="text-gray-500 mt-4 mb-8">RPhoenix is a web development framework written in the functional programming language Elixir.</p>
+                                <a href="" class="bg-blue-400 text-white hover:bg-blue-600 font-bold py-2 px-6 rounded-lg transition-all duration-300">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rubyonrails card -->
+                <div class="md:1/2 lg:w-2/6">
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <div class="bg-gradient-to-r from-emerald-300 to-red-500 h-48 flex justify-center">
+                            <img class="mx-auto py-8 w-24" src="/src/images/rails.svg" alt="" />
+                        </div>
+                        <div>
+                            <div class="p-10">
+                                <h2 class="font-bold text-2xl">Learn Ruby on Rails</h2>
+                                <p class="text-gray-500 mt-4 mb-8">Ruby on Rails, or Rails, is a server-side web application framework written in Ruby.</p>
+                                <a href="" class="bg-blue-400 text-white hover:bg-blue-600 font-bold py-2 px-6 rounded-lg transition-all duration-300">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="/public/main.js"></script>
+    </body>
+</html>
